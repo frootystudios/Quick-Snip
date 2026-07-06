@@ -7,9 +7,11 @@
 ## The short version
 
 Quick Snip captures, annotates, and saves screenshots entirely **on your own
-device**. It has **no servers, no accounts, and no analytics**. It does not
-collect, transmit, sell, or share any of your data. Your screenshots and
-settings never leave your computer.
+device**. It has **no servers, no accounts, and no analytics**, and it never
+sells or shares your data. Your screenshots and settings stay on your computer.
+The one exception: if you uninstall, your browser opens a short, **optional and
+anonymous** feedback form (see "Uninstall feedback" below) — nothing is sent
+unless you choose to submit it.
 
 ## What the extension handles (and where it stays)
 
@@ -66,6 +68,15 @@ of these permissions are used to collect or transmit your data:
 - You can delete any screenshot from the library at any time.
 - **Uninstalling the extension removes all of its stored data** from your
   browser.
+
+## Uninstall feedback (optional)
+
+When you uninstall Quick Snip, your browser opens a short feedback form so you
+can (optionally) tell us why you left. This form is **optional and anonymous** —
+we do not ask for your name, email, or any personal information. It is hosted on
+**Google Forms**, so if you choose to submit a response it is sent to Google
+Forms and handled under Google's privacy policy. You can simply close the page to
+send nothing.
 
 ## Children's privacy
 
