@@ -1,6 +1,6 @@
 # Quick Snip — Privacy Policy
 
-**Effective date:** July 6, 2026
+**Effective date:** July 21, 2026
 **Publisher:** Frooty Studios
 **Contact:** <support@frootystudios.com>
 
@@ -16,13 +16,13 @@ unless you choose to submit it.
 ## What the extension handles (and where it stays)
 
 - **Screenshots you capture.** When you capture a visible area, a selected
-  region, or a full page, the image is created locally in your browser. The most
-  recent captures (currently the last 10) are stored in your browser's local
-  extension storage (`chrome.storage.local`) on your device so you can view,
-  edit, copy, share, or download them from the extension's library. This data
-  is stored **only locally** and is never sent anywhere.
-- **Your settings.** Your preferences (image format, JPG quality, auto-download)
-  are stored locally in the same way.
+  region, or a full page, the image is created locally in your browser. Your most
+  recent captures are stored on your device in the browser's local extension
+  storage (`chrome.storage.local`, and IndexedDB for full-page images) so you can
+  view, edit, copy, share, or download them from the extension's library. This
+  data is stored **only locally** and is never sent anywhere.
+- **Your settings.** Your preferences (image format, JPG quality, auto-download,
+  and what happens after a capture) are stored locally in the same way.
 - **Downloads you initiate.** When you download a screenshot, your browser saves
   it to your Downloads folder. This happens only when you choose to download or
   when you have enabled auto-download; the file is written locally by your
@@ -55,16 +55,16 @@ of these permissions are used to collect or transmit your data:
   coordinate the capture flow.
 - **`downloads`** — to save screenshots to your Downloads folder when you
   download them.
-- **`storage` + `unlimitedStorage`** — to keep your recent screenshots and
-  settings on your device (screenshots are large, so the default quota is
-  lifted).
+- **`storage` + `unlimitedStorage`** — to keep your recent screenshots (in
+  `chrome.storage.local` and, for full-page images, IndexedDB) and settings on
+  your device. Screenshots are large, so the default quota is lifted.
 - **`offscreen`** — an internal, local helper used to reliably save large
   screenshots. It performs no network activity.
 
 ## Data retention and control
 
-- Screenshots are kept only on your device, and only the most recent ones (the
-  library holds up to 10 at a time).
+- Screenshots are kept only on your device — the library keeps your most recent
+  captures up to a storage limit, replacing the oldest as it fills.
 - You can delete any screenshot from the library at any time.
 - **Uninstalling the extension removes all of its stored data** from your
   browser.
