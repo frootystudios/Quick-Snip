@@ -1,6 +1,6 @@
 # Quick Snip — Privacy Policy
 
-**Effective date:** July 21, 2026
+**Effective date:** October 13, 2026
 **Publisher:** Frooty Studios
 **Contact:** <support@frootystudios.com>
 
@@ -18,8 +18,9 @@ unless you choose to submit it.
 - **Screenshots you capture.** When you capture a visible area, a selected
   region, or a full page, the image is created locally in your browser. Your most
   recent captures are stored on your device in the browser's local extension
-  storage (`chrome.storage.local`, and IndexedDB for full-page images) so you can
-  view, edit, copy, share, or download them from the extension's library. This
+  storage (`chrome.storage.local` for the list of captures and their thumbnails,
+  and IndexedDB for the images themselves) so you can view, edit, copy, share, or
+  download them from the extension's library. This
   data is stored **only locally** and is never sent anywhere.
 - **Your settings.** Your preferences (image format, JPG quality, auto-download,
   and what happens after a capture) are stored locally in the same way.
@@ -55,9 +56,8 @@ of these permissions are used to collect or transmit your data:
   coordinate the capture flow.
 - **`downloads`** — to save screenshots to your Downloads folder when you
   download them.
-- **`storage` + `unlimitedStorage`** — to keep your recent screenshots (in
-  `chrome.storage.local` and, for full-page images, IndexedDB) and settings on
-  your device. Screenshots are large, so the default quota is lifted.
+- **`storage` + `unlimitedStorage`** — to keep your recent screenshots (their list in
+  `chrome.storage.local`, the images in IndexedDB) and settings on your device. Screenshots are large, so the default quota is lifted.
 - **`offscreen`** — an internal, local helper used to reliably save large
   screenshots. It performs no network activity.
 
